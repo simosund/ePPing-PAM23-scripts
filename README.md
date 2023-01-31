@@ -8,11 +8,20 @@ the python scripts are used to parse and plot data from the
 experiments (the shell scripts call several of the python scripts to
 automatically generate the plots).
 
-To reproduce the plots in the paper, see the notebook at
-[Zenodo](https://doi.org/10.5281/zenodo.7555410). Note that the
-notebook requires access to the python scripts in this repository.
+## How to recreate the plots from the paper
+To recreate the figures presented in the paper, one must first
+download the raw results available at
+[10.5281/zenodo.7555410](https://doi.org/10.5281/zenodo.7555410). Then,
+simply follow the instructions provided in the notebook
+[PAM_2023_figs.ipynb](PAM_2023_figs.ipynb).
 
-## How to repeat the measurement from the paper
+Note that to be able to recreate some of the plots (specifically those
+comparing the RTTs computed by tshark, PPing and ePPing), one must
+have a slightly modified version of PPing (available at
+[10.5281/zenodo.7589243](https://doi.org/10.5281/zenodo.7589243))
+installed on the local machine when running the notebook.
+
+## How to repeat the experiments from the paper
 
 ### Testbed setup
 All the test scripts assume a simple chain topology in the form:
